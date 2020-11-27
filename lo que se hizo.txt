@@ -1,0 +1,14 @@
+ 1.Lo primero que se hizo fue descargar los csv mas convenientes para poder manejar en jupyter
+ 2.Se descargaron las librerias
+ 3. mandamos  a llamar los archivos csv en el proograma
+ 4. En el primer archivo buscamos el numero de escuelas autonomas, estatales, federales, federales transferidas y particulares habia en la ciudad de Mexico
+ 5. Comparamos en una grafica de barras el numero de alumnos con el numero de escuelas
+ 6. Elaboramos una tercera grafica donde se mostraba el numero de alumnos inscritos, alumnos reprobados y alumnos que aun asisten a la escuela.
+ 7. Empeze a trabajar con el segundo csv
+ 8. Graficamos y comparamos como influye la marginalidad en las calificaciones que tuvieron los alumnos tanto en español como en matematicas, en el examen de planea, seprado po rl nivelI,II,III Y IV respectivamente.
+ 9. Sacamos el describe para poder sacar el promedio
+ 10.Empeze a trabajar con el tercer csv
+ 8. Graficamos y comparamos como influye el tipo de escuela como las comunitarias, publicas, privadas, en las calificaciones que tuvieron los alumnos tanto en español como en matematicas, en el examen de planea, seprado po el nivelI,II,III Y IV respectivamente.
+ 9. Sacamos el describe para poder sacar el promedio
+ 10.Empeze a trabajar con el cuarto csv
+ 8. Graficamos y en nivel de pobreza en el estado de Mexico
