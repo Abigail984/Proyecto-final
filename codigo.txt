@@ -1,0 +1,55 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt 
+datos=pd.read_csv('datos2014.csv')
+print(datos)
+
+datosx= datos[['Tipo','Numero de Escuelas','Numero de Alumnos_Inscritos']
+datosx.plot.bar(x='Tipo',  title='Numero de escuelas autonomas, estatales, federales, federales transferidas y particulares')
+
+datosy= datos[['Tipo','Numero de Alumnos_Inscritos', 'Numero de Alumnos_Existencia','Numero de Alumnos_Aprobados']]
+datosy.plot.bar(x='Tipo',  title='Numero de escuelas autonomas, estatales, federales, federales transferidas y particulares')
+
+#Segundo csv con el que se trabajo
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt 
+datos=pd.read_csv('suma1.csv', encoding= 'ISO-8859-1')
+print(datos.count())
+print(datos)
+
+datosx= datos[['Marginacion','Suma de I ESPAÑOL','Suma de II ESPAÑOL','Suma de III ESPAÑOL','Suma de IV ESPAÑOL']]
+datosx.plot.bar(x='Marginacion',  title='resultados de examen planea en español ')
+
+datosM= datos[['Marginacion','Suma de I MATEMATICAS','Suma de II MATEMATICAS','Suma de III MATEMATICAS','Suma de IV MATEMATICAS']]
+datosM.plot.bar(x='Marginacion',  title='resultados de examen planea en español ')
+datos.describe()
+
+#Tercer csv con el que se trabajo
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt 
+datos=pd.read_csv('escuela.csv', encoding= 'ISO-8859-1')
+print(datos.count())
+print(datos)
+
+datosx= datos[['escuela','Suma de I ESPAÑOL','Suma de II ESPAÑOL','Suma de III ESPAÑOL','Suma de IV ESPAÑOL']]
+datosx.plot.bar(x='escuela',  title='resultados de examen planea en español y tipo de escuela ')
+datosM= datos[['escuela','Suma de I MATEMATICAS','Suma de II MATEMATICAS','Suma de III MATEMATICAS','Suma de IV MATEMATICAS']]
+datosM.plot.bar(x='escuela',  title='resultados de examen planea en matematicas y tipo de escuela ')
+
+#Cuart csv con el que se trabajo 
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt 
+datos=pd.read_csv('pobreza1.csv')
+print(datos.count())
+
+x= datos['indicador_1']
+y=datos['porcentaje_2010']
+ax= datos.plot.bar(x='indicador_1', y='porcentaje_2010', rot=-90)
+
+x= datos['indicador_1']
+y=datos['porcentaje_2010']
+ax= datos.plot.pie(x='indicador_1', y='porcentaje_2010', rot=-90)
